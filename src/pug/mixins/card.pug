@@ -1,0 +1,9 @@
+mixin card(link, img, sort, title, desc)
+    a.card(href=link)
+        .card__img
+            +lazy-image-single-webp(img)
+        .card__inner
+            p=sort
+            h3=title
+            p.mb-3=desc
+            .btn.btn--grey.mt-auto Read more

@@ -1,0 +1,16 @@
+.header {
+    background-color: #c0c5cb;
+    position: relative;
+    z-index: 3;
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+    @include  min($mobile-landscape-and-up) {
+        background-color: #cdd2d8;
+    }
+
+    @include  min($desktop-s-and-up) {
+        background-color: #e0e5eb;
+    }
+}

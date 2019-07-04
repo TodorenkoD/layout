@@ -1,0 +1,9 @@
+mixin lazy-image-single-webp(url, alt, className)
+    - const srcset = url.replace(/(\.\w+$)/, '@2x$1');
+    - const urlWebp = url.replace(/(jpg|png|jpeg)\b/, 'webp');
+    - const srcsetWebp = srcset.replace(/(jpg|png|jpeg)\b/, 'webp');
+    - const sourceWebp = urlWebp + ' 1x, ' + srcsetWebp + ' 2x';
+
+    picture
+        source(data-srcset=`${sourceWebp}` type="image/webp")
+        img.lazyload(data-src=url data-srcset=`${srcset} 2x` class=className alt=alt)

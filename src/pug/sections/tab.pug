@@ -1,0 +1,27 @@
+section.section
+    .container
+        .row.justify-content-center
+            .col-12
+                h2 Tab
+        .row
+            .col-12
+                .js-tab.tab
+                    .col-3.p-0
+                        ul.tab__list
+                            li.tab__item: a(href="#tabs-1").js-tab__link.tab__link.isActive tab1
+                            li.tab__item: a(href="#tabs-2").js-tab__link.tab__link tab2
+                            li.tab__item: a(href="#tabs-3").js-tab__link.tab__link tab3
+                    .col-8
+                        .tab__container
+                            div(id="tabs-1").js-tab__content.tab__content.isActive
+                                p Content for tab1
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque exercitationem libero modi nobis quidem reprehenderit. Aperiam aut commodi deleniti ea eligendi est labore obcaecati odio quo repellendus, sapiente vitae.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloribus ex, fugiat, iure laboriosam, odio perferendis quam quibusdam sed sequi sit soluta tempore voluptatibus! Aperiam blanditiis deserunt inventore omnis. Ex.
+                            div(id="tabs-2").js-tab__content.tab__content
+                                p Content for tab2
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur enim maiores maxime minus molestias provident recusandae rerum vitae voluptatum? Debitis esse illum impedit nihil odit officia, tempore ut voluptatibus?
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at aut culpa cum debitis dolor doloremque doloribus, eius exercitationem inventore iste magni molestias nihil quis reiciendis reprehenderit, totam veniam voluptas?
+                            div(id="tabs-3").js-tab__content.tab__content
+                                p Content for tab3
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis consequatur culpa ducimus, eum facere id, ipsam, iure nobis numquam officiis optio quae quaerat quam quisquam quos ratione sed similique.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi architecto dicta error hic maxime officia optio quibusdam unde? Blanditiis minima modi nesciunt perferendis quia voluptate voluptatum! Ad, commodi obcaecati!

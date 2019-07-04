@@ -1,0 +1,15 @@
+mixin rating(caption, name, option1, option2, option3, option4, option5)
+    fieldset.rating
+        legend.rating__caption=caption
+        .rating__group
+            input.rating__input(id=`${name}-1` type='radio' name=`${name}` value='1' checked='')
+            label.rating__star(for=`${name}-1` aria-label=`${option1}`)
+            input.rating__input(id=`${name}-2` type='radio' name=`${name}` value='2')
+            label.rating__star(for=`${name}-2` aria-label=`${option2}`)
+            input.rating__input(id=`${name}-3` type='radio' name=`${name}` value='3')
+            label.rating__star(for=`${name}-3` aria-label=`${option3}`)
+            input.rating__input(id=`${name}-4` type='radio' name=`${name}` value='4')
+            label.rating__star(for=`${name}-4` aria-label=`${option4}`)
+            input.rating__input(id=`${name}-5` type='radio' name=`${name}` value='5')
+            label.rating__star(for=`${name}-5` aria-label=`${option5}`)
+            .rating__focus

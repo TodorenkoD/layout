@@ -1,0 +1,5 @@
+mixin lazy-image-single(url, alt, className)
+    - const srcset = url.replace(/(\.\w+$)/, '@2x$1')
+
+    picture
+        img.lazyload(data-src=url data-srcset=`${srcset} 2x` class=className alt=alt)
