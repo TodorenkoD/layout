@@ -1,4 +1,3 @@
-# darwin-sandbox.web
 
 [home](https://todorenkod.github.io/layout/dist/)
 
